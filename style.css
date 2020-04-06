@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.smn {
+    width: 960px;
+    margin: 10px auto;
+    list-style-type: none;
+
+}
+
+.waterfal {
+    width: 300px;
+    margin: 2px;
+    float: left;
+    border: 1px solid #675c5c;
+     position: relative;
+}
+
+.smn::after,
+.smn::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*
+.picture img:hover{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, transparent , #ff0000);
+    
+}
+*/
+.picture {
+    overflow: hidden;
+   
+}
+
+.picture img {
+    height: 500px;
+    display: block;
+}
+
+.picture a {
+    position: absolute;
+    top: 300px;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5em;
+    text-decoration: none;
+}
+.picture a:hover {
+    background-image: linear-gradient(to top, #2e2c2c , transparent 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 300px;}
